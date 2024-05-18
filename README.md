@@ -24,56 +24,60 @@ https://docs.docker.com/engine/install/ubuntu/
 ## Dockerfile commands/Instructions
 1. FROM
 Represents the base image(OS), which is the command that is executed first before any other commands.
-
+```
 Syntax: 
 FROM <ImageName>
 Example: The base image will be ubuntu:19.04 Operating System.
 FROM ubuntu:19.04
-
+```
 2. COPY
 The copy command is used to copy the file/folders to the image while building the image. 
-
+```
 Syntax:
 COPY <Source> <Destination>
 Example: Copying the .war file to the Tomcat webapps directory
 COPY target/java-web-app.war  /usr/local/tomcat/webapps/java-web-app.war
-
+```
 3. ADD
 While creating the image, we can download files from distant HTTP/HTTPS destinations using the ADD command.
+```
 Syntax:
 ADD <URL>
 Example: Try to download Jenkins using ADD command 
 ADD https://get.jenkins.io/war/2.397/jenkins.war
-
+```
 4. RUN
 Scripts and commands are run with the RUN instruction. The execution of RUN commands or instructions will take place while you create an image on top of the prior layers (Image).
+```
 Syntax: 
 RUN < Command + ARGS>
 Example: 
 RUN touch file
-
+```
 5. CMD
 The main purpose of the CMD command is to start the process inside the container and it can be overridden.
+```
 Syntax:
 CMD [command + args]
 Example: Starting Jenkins 
 CMD ["java","-jar", "Jenkins.war"]
-
+```
 6. ENTRYPOINT
 A container that will function as an executable is configured by ENTRYPOINT. When you start the Docker container, a command or script called ENTRYPOINT is executed. It can’t be overridden.The only difference between CMD and ENTRYPOINT is CMD can be overridden and ENTRYPOINT can’t.
-
+```
 Syntax:
 ENTRYPOINT [command + args]
 Example: Executing the echo command.
 ENTRYPOINT ["echo","Welcome to GFG"]
-
+```
 7. MAINTAINER
 By using the MAINTAINER command we can identify the author/owner of the Dockerfile and we can set our own author/owner for the image.
+```
 Syntax: 
 MAINTAINER <NAME>
-Example: Setting the author for the image as a GFG author.
-MAINTAINER  GFG author 
-
+Example: Setting the author for the image as a KESaj.
+MAINTAINER  KESaj 
+```
 ## Create a Dockerfile
 - Create a file named Dockerfile.
 - Add instructions in Dockerfile.
