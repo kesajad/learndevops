@@ -1,3 +1,7 @@
+# WhiteBoard
+
+![Docker](https://github.com/kesajad/learndevops/assets/99335234/a91b808b-9f18-4358-bb8c-0c3c84770b28)
+
 # Docker and Docker Containers
 ## What is Docker?
 Docker is an open-source platform where developers can containerize the application. Containers are accessible before Docker but have gained popularity as a result of Docker. The most crucial aspects of Docker are the Docker Engine and Docker Hub. The first one works on your local system to run your program, and the second one is similar to a cloud service where we can share our docker images with everyone.
