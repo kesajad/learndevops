@@ -10,7 +10,7 @@
 ![image](https://github.com/kesajad/learndevops/assets/99335234/da85790a-512b-46b4-9c0d-7e20837ee984)
 
 ### YAML Pipeline in the demo
-By using the MAINTAINER command we can identify the author/owner of the Dockerfile and we can set our own author/owner for the image.
+YAML Pipeline for NodeJS Web App
 ```
 trigger: 
 - main
