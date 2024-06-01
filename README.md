@@ -3,3 +3,4 @@
 - Docker
 - Kubernetes
 - k8s Deep Dive
+- Azure DevOps Deep Dive
