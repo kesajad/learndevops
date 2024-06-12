@@ -4,6 +4,9 @@
 ## Day 2
 ![Azure DevOps (1)](https://github.com/kesajad/learndevops/assets/99335234/7fb6b3fc-7b0f-4ecd-bc6b-89ce3cafef8b)
 
+## Day 3
+![null](https://github.com/kesajad/learndevops/assets/99335234/43041b1c-43be-49d6-affc-e663ec19b87d)
+
 # Azure DevOps CI CD
 ## Service Principle?
 
@@ -52,9 +55,9 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Tech Tutorials With Piyush (9e9c27ce-e0c8-4171-a368-ad16977ec849)'
+        azureSubscription: 'Test-SP'
         appType: 'webAppLinux'
-        WebAppName: 'TechTutorialsWithPiyush'
+        WebAppName: 'GuruSchools'
         packageForLinux: '$(System.ArtifactsDirectory)/drop'
         RuntimeStack: 'STATICSITE|1.0'
 ```
