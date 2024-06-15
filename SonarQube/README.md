@@ -9,7 +9,7 @@
 
 ### 2 Create a Linux VM
 - Create a linux VM for SonarQube
-- Encapsulated file for Docker Installation
+- Encapsulated file for Docker Installation (vim Docker.sh)
 ```
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -26,6 +26,14 @@ echo \
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+- Make Docker.sh as Executable file
+```
+chmod +x docker.sh
+```
+- Run the file
+```
+bash docker.sh
 ```
 - Run SonarQube as a Docker Container
 ```
